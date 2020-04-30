@@ -15,7 +15,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                	app = docker.build("malatdocker/selenium-docker")
+                	app = docker.build("malathiqe/selenium-docker")
                 }
             }
         }
