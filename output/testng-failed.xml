@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [search-module]" parallel="tests">
+  <test thread-count="5" name="Search-DuckDuckGo-docker(failed)" parallel="tests">
+    <parameter name="keyword" value="docker"/>
+    <classes>
+      <class name="searchmodule.test.SearchTest">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- searchmodule.test.SearchTest -->
+    </classes>
+  </test> <!-- Search-DuckDuckGo-docker(failed) -->
+  <test thread-count="5" name="Search-DuckDuckGo-webdriver(failed)" parallel="tests">
+    <parameter name="keyword" value="webdriver"/>
+    <classes>
+      <class name="searchmodule.test.SearchTest">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- searchmodule.test.SearchTest -->
+    </classes>
+  </test> <!-- Search-DuckDuckGo-webdriver(failed) -->
+  <test thread-count="5" name="Search-DuckDuckGo-java(failed)" parallel="tests">
+    <parameter name="keyword" value="java"/>
+    <classes>
+      <class name="searchmodule.test.SearchTest">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- searchmodule.test.SearchTest -->
+    </classes>
+  </test> <!-- Search-DuckDuckGo-java(failed) -->
+</suite> <!-- Failed suite [search-module] -->
